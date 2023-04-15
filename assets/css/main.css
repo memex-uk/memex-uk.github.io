@@ -1,0 +1,71 @@
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: "SF Mono", "Roboto Mono", "Fira Code", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+  padding: 1rem;
+}
+
+.entry_text {
+  line-height: 2;
+}
+
+.maintitle {
+  margin-left: 2rem;
+}
+
+svg {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+  stroke-width: 0.25em;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.graphic_center {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  max-width: 10rem;
+}
+@media (min-width: 768px) {
+  .graphic_center {
+    width: 10%;
+  }
+}
+@media (min-width: 369px) {
+  .graphic_center {
+    width: 30%;
+  }
+}
+@media (max-width: 368px) {
+  .graphic_center {
+    width: 50%;
+  }
+}
+
+.graphic_center svg {
+  padding: 0 0.125em;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.graphic_center svg:hover {
+  stroke: #ffcc00;
+}
+.graphic_center svg:active {
+  transform: scale(0.975);
+  opacity: 0.9;
+}
+
+.graphic_center a span {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
