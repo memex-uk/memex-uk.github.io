@@ -1,8 +1,11 @@
 body {
+  padding: 1rem;
+}
+
+* {
   background: #000000;
   color: #ffffff;
   font-family: "SF Mono", "Roboto Mono", "Fira Code", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
-  padding: 1rem;
 }
 
 .entry_text {
@@ -65,6 +68,52 @@ a:hover {
 }
 
 .graphic_center a span {
+  display: none;
+}
+
+form {
+  display: grid;
+  overflow: hidden;
+}
+
+form label {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+form .form-item {
+  padding-bottom: 1rem;
+}
+
+form input {
+  border: 1px solid #ffffff;
+  padding: 0.5rem;
+}
+
+form button {
+  background: #000000;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+form button:hover {
+  background: #1a1a1a;
+}
+form button:active {
+  transform: scale(0.975);
+  opacity: 0.9;
+}
+
+.hidden {
   display: none;
 }
 
